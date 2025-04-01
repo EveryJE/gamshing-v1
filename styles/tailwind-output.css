@@ -23,7 +23,6 @@
     --color-pink-500: oklch(0.656 0.241 354.308);
     --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-600: oklch(0.446 0.03 256.802);
-    --color-gray-800: oklch(0.278 0.033 256.848);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -42,7 +41,9 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-unbounded: "Unbounded", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
     --color-primary-300: #a47ee6;
+    --color-primary-500: #6932c2;
   }
 }
 @layer base {
@@ -194,9 +195,6 @@
   .relative {
     position: relative;
   }
-  .static {
-    position: static;
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -251,6 +249,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -278,8 +279,14 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -336,6 +343,10 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-green-100 {
     background-color: var(--color-green-100);
   }
@@ -350,6 +361,9 @@
   }
   .bg-primary-300 {
     background-color: var(--color-primary-300);
+  }
+  .bg-primary-500 {
+    background-color: var(--color-primary-500);
   }
   .bg-red-100 {
     background-color: var(--color-red-100);
@@ -374,6 +388,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .font-roboto {
+    font-family: var(--font-roboto);
   }
   .font-unbounded {
     font-family: var(--font-unbounded);
@@ -405,9 +422,6 @@
   .text-gray-600 {
     color: var(--color-gray-600);
   }
-  .text-gray-800 {
-    color: var(--color-gray-800);
-  }
   .text-green-800 {
     color: var(--color-green-800);
   }
@@ -434,6 +448,13 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:text-gray-300 {
     &:hover {
@@ -542,7 +563,17 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }

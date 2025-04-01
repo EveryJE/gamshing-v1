@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gamshing Travels and Tours</title> 
-     <style>
+    <title>Gamshing Travels and Tours</title>
+    <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap");
     </style>
     <link href="../styles/tailwind-output.css" rel="stylesheet" />
     <link href="../styles/font.css" rel="stylesheet" />
- 
+    <script type="module" src="../script/imports.js"></script>
+    <script type="module">
+      import { setupImages } from "../script/imports.js";
+      document.addEventListener("DOMContentLoaded", setupImages);
+    </script>
   </head>
-  <body class="bg-primary-300">
+  <body class="">
     <!-- Header -->
     <header class="">
       <div
@@ -19,14 +23,19 @@
       >
         <div class="flex items-center">
           <img
-            src="/placeholder.svg?height=40&width=120"
+            src=""
             alt="Gamshing Logo"
-            class="h-10"
+            class="h-10 logo"
+          />
+          <img
+            src=""
+            alt="Beach vacation"
+            class="w-full h-48 object-cover vacation-image"
           />
         </div>
         <nav class="hidden md:flex space-x-6">
-          <a href="#about" class="hover:text-gray-300  ">About Us</a>
-          <a href="#services" class=" font-roboto">Services</a>
+          <a href="#about" class="hover:text-gray-300">About Us</a>
+          <a href="#services" class="font-roboto">Services</a>
           <a href="#partners" class="hover:text-gray-300">Partners</a>
           <a href="#contact" class="hover:text-gray-300">Contact</a>
         </nav>
@@ -87,7 +96,9 @@
               class="h-6 w-6 rounded-full"
             />
           </div>
-          <h1 class="text-4xl font-bold mb-4 font-unbounded">Register to Study Abroad</h1>
+          <h1 class="text-4xl font-bold mb-4 font-unbounded">
+            Register to Study Abroad
+          </h1>
           <p class="mb-6">
             Gamshing helps you find your trusted partner in international
             travel, education, work placement, property purchase, and more.
@@ -114,7 +125,7 @@
     <!-- Welcome Section -->
     <section class="py-12 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 ">
+        <h2 class="text-3xl font-bold mb-6">
           Welcome to Gamshing Travels and Tours
         </h2>
         <p class="text-gray-600 mb-12">
