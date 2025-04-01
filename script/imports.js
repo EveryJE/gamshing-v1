@@ -10,8 +10,11 @@ export const images = {
     travelWindow: '../assets/img/travel-window-scene.webp',
     withUs: '../assets/img/with-us.webp',
     womanStudying: '../assets/img/woman-studying.webp',
+    PlaneOne: '../assets/img/plane-1.webp',
+    PlaneTwo: '../assets/img/plane-2.webp',
+    ToAbroad: '../assets/img/to-abroad.webp',
     flags: [
-        '../assets/svg/flag-1.svg', 
+        '../assets/svg/flag-1.svg',
         '../assets/svg/flag-2.svg',
         '../assets/svg/flag-3.svg',
         '../assets/svg/flag-4.svg',
@@ -20,26 +23,40 @@ export const images = {
 };
 
 export function setupImages() {
-    // Logo
-    const logoImg = document.querySelector('.logo');
-    if (logoImg) logoImg.src = images.logo;
+    // Generic image setup for multiple instances
+    const setupImage = (selector, path) => {
+        document.querySelectorAll(selector).forEach(el => {
+            el.src = path;
+        });
+    };
 
-    // Hero image
-    const heroImage = document.querySelector('.hero-image');
-    if (heroImage) heroImage.src = images.womanStudying;
+    // Specific images
+    setupImage('.logo', images.logo);
+    setupImage('.hero-image', images.womanStudying);
+    setupImage('.travel-window-scene', images.travelWindow);
+    setupImage('.travel-key', images.travelKey);
+    setupImage('.travel-passport', images.travelPassport);
+    setupImage('.travel-beach', images.travelBeach);
+    setupImage('.graduate-hat', images.graduateHat);
+    setupImage('.paper-plane', images.paperPlane);
+    setupImage('.with-us', images.withUs);
+    setupImage('.woman-studying', images.womanStudying);
+    setupImage('.plane-1', images.PlaneOne);
+    setupImage('.plane-2', images.PlaneTwo);
+    setupImage('.to-abroad', images.ToAbroad);
+    // Add all other images...
 
-    // Flags in hero section
-    const flagElements = document.querySelectorAll('.flag-img');
-    flagElements.forEach((flag, index) => {
+    // Flags setup
+    document.querySelectorAll('.flag-img').forEach((flag, index) => {
         if (images.flags[index]) {
             flag.src = images.flags[index];
         }
     });
-
-    // Services images
-    document.querySelector('.vacation-image')?.setAttribute('src', images.travelBeach);
-    document.querySelector('.property-image')?.setAttribute('src', images.travelKey);
-    document.querySelector('.flight-image')?.setAttribute('src', images.travelPassport);
-    document.querySelector('.study-image')?.setAttribute('src', images.graduateHat);
-    document.querySelector('.work-image')?.setAttribute('src', images.travelWindow);
 }
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links a.active')?.classList.remove('active');
+        link.classList.add('active');
+    });
+});
