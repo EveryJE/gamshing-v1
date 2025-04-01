@@ -1,169 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link href="../styles/tailwind-output.css" rel="stylesheet">
-<style>
-        .hero-gradient {
-            background: linear-gradient(to right, #4a148c, #7b1fa2);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamshing Travels and Tours</title> 
+     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap");
     </style>
-</head>
-<body class="font-sans  bg-opacity-50 ">
+    <link href="../styles/tailwind-output.css" rel="stylesheet" />
+    <link href="../styles/font.css" rel="stylesheet" />
+ 
+  </head>
+  <body class="bg-primary-300">
     <!-- Header -->
-    <header class=" shadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="text-2xl font-bold text-purple-900 ">gamshing</div>
-                <span class="text-orange-500 text-xl">✈</span>
-            </div>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-700 hover:text-purple-700">About us</a>
-                <a href="#services" class="text-gray-700 hover:text-purple-700">Services</a>
-                <a href="#countries" class="text-gray-700 hover:text-purple-700">Countries</a>
-                <a href="#contact" class="text-gray-700 hover:text-purple-700">Contact</a>
-            </nav>
-            <div class="md:hidden">
-                <button class="text-gray-700">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
+    <header class="">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <img
+            src="/placeholder.svg?height=40&width=120"
+            alt="Gamshing Logo"
+            class="h-10"
+          />
         </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-gray-300  ">About Us</a>
+          <a href="#services" class=" font-roboto">Services</a>
+          <a href="#partners" class="hover:text-gray-300">Partners</a>
+          <a href="#contact" class="hover:text-gray-300">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button class="text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <!-- Flag Section -->
-    <section class="bg-gray-100 py-3">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-center space-x-2 overflow-x-auto py-2">
-                <img src="/api/placeholder/24/24" alt="China Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="Japan Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="UK Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="US Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="Canada Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="Norway Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="Sweden Flag" class="rounded-full w-6 h-6">
-                <img src="/api/placeholder/24/24" alt="Denmark Flag" class="rounded-full w-6 h-6">
-            </div>
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-12">
+      <div class="container mx-auto px-4 md:flex items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <div class="flex space-x-2 mb-4">
+            <img
+              src="/placeholder.svg?height=30&width=30"
+              alt="Flag"
+              class="h-6 w-6 rounded-full"
+            />
+            <img
+              src="/placeholder.svg?height=30&width=30"
+              alt="Flag"
+              class="h-6 w-6 rounded-full"
+            />
+            <img
+              src="/placeholder.svg?height=30&width=30"
+              alt="Flag"
+              class="h-6 w-6 rounded-full"
+            />
+            <img
+              src="/placeholder.svg?height=30&width=30"
+              alt="Flag"
+              class="h-6 w-6 rounded-full"
+            />
+            <img
+              src="/placeholder.svg?height=30&width=30"
+              alt="Flag"
+              class="h-6 w-6 rounded-full"
+            />
+            <img
+              src="/placeholder.svg?height=30&width=30"
+              alt="Flag"
+              class="h-6 w-6 rounded-full"
+            />
+          </div>
+          <h1 class="text-4xl font-bold mb-4 font-unbounded">Register to Study Abroad</h1>
+          <p class="mb-6">
+            Gamshing helps you find your trusted partner in international
+            travel, education, work placement, property purchase, and more.
+            We're your gateway to explore new territories, study in prestigious
+            universities, or invest in foreign real estate, we are your trusted
+            companion.
+          </p>
+          <button
+            class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md"
+          >
+            Apply Now
+          </button>
         </div>
-    </section>
-
-    <!-- Register Hero Section -->
-    <section class="hero-gradient text-white py-10">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-6 md:mb-0">
-                    <h1 class="text-3xl md:text-4xl font-bold mb-4">Register to Study Abroad</h1>
-                    <p class="mb-6">Simplifying study and travel is your trusted partner in international travel, education, work placement, property purchase abroad and everything in between. Study or move, our expertise makes things easy for real students, we advise on planning, documentation, support foreign real estate, we offer booking services.</p>
-                    <a href="#" class="inline-block bg-purple-900 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-800 transition duration-300 mb-4">Apply Now</a>
-                    <div class="inline-block ml-4">
-                        <i class="far fa-paper-plane text-2xl text-blue-300"></i>
-                    </div>
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                    <img src="/api/placeholder/500/350" alt="Student studying" class="rounded-lg shadow-lg mx-auto">
-                </div>
-            </div>
+        <div class="md:w-1/2 md:pl-8">
+          <img
+            src="/placeholder.svg?height=400&width=500"
+            alt="Student studying"
+            class="rounded-lg w-full h-auto"
+          />
         </div>
+      </div>
     </section>
 
     <!-- Welcome Section -->
-    <section class="py-10 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8">Welcome to Gamshing Travels and Tours</h2>
-            <p class="text-gray-600 mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Left Column -->
-                <div class="space-y-6">
-                    <!-- Purchase Property Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="/api/placeholder/500/300" alt="Property keys" class="w-full h-48 object-cover">
-                        <div class="p-6 bg-purple-100">
-                            <h3 class="text-xl font-bold text-purple-900 mb-2">Purchase a Property Abroad</h3>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 ">
+          Welcome to Gamshing Travels and Tours
+        </h2>
+        <p class="text-gray-600 mb-12">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
 
-                    <!-- Student Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="/api/placeholder/500/300" alt="Student studying" class="w-full h-48 object-cover">
-                        <div class="p-6 bg-orange-100">
-                            <h3 class="text-xl font-bold text-orange-700 mb-2">Study Abroad with Us</h3>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="space-y-6">
-                    <!-- Beach Vacation Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="/api/placeholder/500/300" alt="Beach vacation" class="w-full h-48 object-cover">
-                        <div class="p-6 bg-pink-100">
-                            <h3 class="text-xl font-bold text-pink-700 mb-2">Vacations & Abroad Tours</h3>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-
-                    <!-- Flight Tickets Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="/api/placeholder/500/300" alt="Passport" class="w-full h-48 object-cover">
-                        <div class="p-6 bg-red-100">
-                            <h3 class="text-xl font-bold text-red-700 mb-2">Buy your Flight Tickets</h3>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-
-                    <!-- Work Abroad Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <img src="/api/placeholder/500/300" alt="Airplane window view" class="w-full h-48 object-cover">
-                        <div class="p-6 bg-green-100">
-                            <h3 class="text-xl font-bold text-green-700 mb-2">Work Abroad</h3>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Vacations & Abroad Tours -->
+          <div
+            class="col-span-1 md:col-span-2 lg:col-span-1 rounded-lg overflow-hidden"
+          >
+            <div class="relative">
+              <img
+                src="/placeholder.svg?height=300&width=500"
+                alt="Beach vacation"
+                class="w-full h-48 object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-pink-500 p-4 text-white"
+              >
+                <h3 class="font-bold">Vacations & Abroad Tours</h3>
+                <p class="text-sm">
+                  Explore beautiful destinations around the world
+                </p>
+              </div>
             </div>
+          </div>
+
+          <!-- Purchase a Property Abroad -->
+          <div class="bg-indigo-100 rounded-lg p-4">
+            <div class="mb-4">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Property keys"
+                class="w-full h-40 object-cover rounded-lg"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-indigo-900">
+              Purchase a Property Abroad
+            </h3>
+            <p class="text-indigo-800 text-sm">
+              Invest in international real estate with our expert guidance. Find
+              your dream property in prime locations worldwide.
+            </p>
+          </div>
+
+          <!-- Buy your Flight Tickets -->
+          <div class="bg-red-100 rounded-lg p-4">
+            <div class="mb-4">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Passport"
+                class="w-full h-40 object-cover rounded-lg"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-red-900">
+              Buy your Flight Tickets
+            </h3>
+            <p class="text-red-800 text-sm">
+              Get the best deals on flights to any destination. Affordable
+              prices and convenient booking.
+            </p>
+          </div>
+
+          <!-- Study Abroad with Us -->
+          <div class="bg-orange-100 rounded-lg p-4">
+            <div class="mb-4">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Student studying"
+                class="w-full h-40 object-cover rounded-lg"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-orange-900">
+              Study Abroad with Us
+            </h3>
+            <p class="text-orange-800 text-sm">
+              Access top educational institutions worldwide. We guide you
+              through applications, visas, and accommodation.
+            </p>
+          </div>
+
+          <!-- Work Abroad -->
+          <div class="bg-green-100 rounded-lg p-4">
+            <div class="mb-4">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Airplane window"
+                class="w-full h-40 object-cover rounded-lg"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-green-900">Work Abroad</h3>
+            <p class="text-green-800 text-sm">
+              Find international career opportunities. We connect you with
+              employers and help with work permits.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-purple-900 text-white py-10">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">gamshing</h3>
-                    <span class="text-orange-400 text-xl">✈</span>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">About</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-purple-300">Who We Are</a></li>
-                        <li><a href="#" class="hover:text-purple-300">Purchase Property Abroad</a></li>
-                        <li><a href="#" class="hover:text-purple-300">Vacations & Abroad Tours</a></li>
-                        <li><a href="#" class="hover:text-purple-300">Buy your Flight Tickets</a></li>
-                        <li><a href="#" class="hover:text-purple-300">Study Abroad with Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact us</h3>
-                    <p class="mb-4">123 Main Street, City<br>
-                    State, Country ZIP</p>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="#" class="hover:text-purple-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-purple-300"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-purple-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-purple-300"><i class="far fa-envelope"></i></a>
-                    </div>
-                </div>
+    <footer class="bg-primary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">gamshing</h3>
+            <p class="text-sm">travels & tours</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">About</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">About Gamshing</a></li>
+              <li>
+                <a href="#" class="hover:underline">Purchase Property Abroad</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Vacations & Abroad Tours</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Buy your Flight Tickets</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Study Abroad with Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact us</h3>
+            <p class="mb-4">123 Main Street, City<br />Country, Postal Code</p>
+            <p class="mb-4">info@gamshing.com<br />+1 234 567 890</p>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-gray-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-gray-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-gray-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
