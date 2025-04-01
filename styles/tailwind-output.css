@@ -967,8 +967,14 @@
   .underline {
     text-decoration-line: underline;
   }
+  .decoration-\[\#d86565\] {
+    text-decoration-color: #d86565;
+  }
   .decoration-\[\[\]\] {
     text-decoration-color: [];
+  }
+  .decoration-\[d86565\] {
+    text-decoration-color: d86565;
   }
   .decoration-amber-500 {
     text-decoration-color: var(--color-amber-500);
@@ -1299,6 +1305,11 @@
       color: var(--color-black);
     }
   }
+  .md\:text-primary-950 {
+    @media (width >= 48rem) {
+      color: var(--color-primary-950);
+    }
+  }
   .lg\:absolute {
     @media (width >= 64rem) {
       position: absolute;
@@ -1375,6 +1386,11 @@
       place-self: start;
     }
   }
+  .lg\:bg-primary-800 {
+    @media (width >= 64rem) {
+      background-color: var(--color-primary-800);
+    }
+  }
   .lg\:bg-white {
     @media (width >= 64rem) {
       background-color: var(--color-white);
@@ -1431,6 +1447,11 @@
   .lg\:text-primary-950 {
     @media (width >= 64rem) {
       color: var(--color-primary-950);
+    }
+  }
+  .lg\:decoration-primary-950 {
+    @media (width >= 64rem) {
+      text-decoration-color: var(--color-primary-950);
     }
   }
   .xl\:mx-5 {
