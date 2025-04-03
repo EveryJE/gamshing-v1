@@ -54,9 +54,9 @@ export function setupImages() {
     });
 }
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.querySelector('.nav-links a.active')?.classList.remove('active');
-        link.classList.add('active');
+fetch("app-form.html")
+    .then((r) => r.text())
+    .then((html) => {
+        document.getElementById("form-container").innerHTML = html;
+        if (window.setupImages) setupImages();
     });
-});
