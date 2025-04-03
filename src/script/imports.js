@@ -1,24 +1,24 @@
 
 // Export all image paths as named exports
 export const images = {
-    logo: '../assets/img/logo.webp',
-    graduateHat: '../assets/img/graduate-hat.webp',
-    paperPlane: '../assets/img/paper-plane.webp',
-    travelBeach: '../assets/img/travel-beach.webp',
-    travelKey: '../assets/img/travel-key.webp',
-    travelPassport: '../assets/img/travel-passport.webp',
-    travelWindow: '../assets/img/travel-window-scene.webp',
-    withUs: '../assets/img/with-us.webp',
-    womanStudying: '../assets/img/woman-studying.webp',
-    PlaneOne: '../assets/img/plane-1.webp',
-    PlaneTwo: '../assets/img/plane-2.webp',
-    ToAbroad: '../assets/img/to-abroad.webp',
+    logo: 'assets/img/logo.webp',
+    graduateHat: 'assets/img/graduate-hat.webp',
+    paperPlane: 'assets/img/paper-plane.webp',
+    travelBeach: 'assets/img/travel-beach.webp',
+    travelKey: 'assets/img/travel-key.webp',
+    travelPassport: 'assets/img/travel-passport.webp',
+    travelWindow: 'assets/img/travel-window-scene.webp',
+    withUs: 'assets/img/with-us.webp',
+    womanStudying: 'assets/img/woman-studying.webp',
+    PlaneOne: 'assets/img/plane-1.webp',
+    PlaneTwo: 'assets/img/plane-2.webp',
+    ToAbroad: 'assets/img/to-abroad.webp',
     flags: [
-        '../assets/svg/flag-1.svg',
-        '../assets/svg/flag-2.svg',
-        '../assets/svg/flag-3.svg',
-        '../assets/svg/flag-4.svg',
-        '../assets/svg/flag-5.svg',
+        'assets/svg/flag-1.svg',
+        'assets/svg/flag-2.svg',
+        'assets/svg/flag-3.svg',
+        'assets/svg/flag-4.svg',
+        'assets/svg/flag-5.svg',
     ]
 };
 
