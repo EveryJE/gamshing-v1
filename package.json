@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "wind": "npx @tailwindcss/cli -i ./main.css -o ./styles/tailwind-output.css --watch"
+    "wind": "npx @tailwindcss/cli -i ./main.css -o ./src/styles/tailwind-output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.17",
