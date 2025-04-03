@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "wind": "npx @tailwindcss/cli -i ./main.css -o ./styles/tailwind-output.css --watch"
   },
@@ -7,3 +8,4 @@
     "tailwindcss": "^4.0.17"
   }
 }
+

@@ -3,6 +3,7 @@
 
 @import "tailwindcss";
 @import url("./theme.css");
+@import "./node_modules/preline/variants.css";
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
@@ -23,10 +24,33 @@
   --color-primary-950: #12072f;
 }
 
-.nav-menu {
-  @apply font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700;
-}
 
-.nav-links {
-  @apply flex flex-col gap-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5;
+
+@layer components {
+  .form-container {
+    @apply space-y-4; /* Adds spacing between form groups */
+  }
+
+  .form-group {
+    @apply ; /* Limits the width of each form group */
+  }
+
+  .form-header {
+    @apply flex flex-wrap justify-between items-center gap-2;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium mb-2 dark:text-white;
+  }
+
+  .form-hint {
+    @apply block mb-2 text-sm text-gray-500 dark:text-neutral-500;
+  }
+
+  .form-input {
+    @apply py-2.5 sm:py-3 px-4 block w-full border border-gray-200 rounded-lg sm:text-sm 
+           focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 
+           disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 
+           dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600;
+  }
 }

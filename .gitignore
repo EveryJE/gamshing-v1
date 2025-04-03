@@ -3,3 +3,4 @@ package-lock.json
 .gitignore
 style/tailwindcss
 .vscode/settings.json
+flow/
