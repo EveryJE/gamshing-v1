@@ -1,357 +1,277 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gamshing Travels and Tours</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap");
-    </style>
-    <link href="./styles/tailwind-output.css" rel="stylesheet" />
-    <link href="./styles/font.css" rel="stylesheet" />
-    <script type="module" src="./script/imports.js"></script>
-    <script type="module">
-      import { setupImages } from "./script/imports.js";
-      document.addEventListener("DOMContentLoaded", setupImages);
-    </script>
-  </head>
-  <body class="font-poppins max-w-[1700px] mx-auto">
-    <!-- Header -->
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="" class="logo h-16" alt="" />
-        </a>
-        <button
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 peer focus:opacity-0"
-          aria-controls="navbar"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamshing Travels and Tours</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap");
+  </style>
+  <link href="./styles/tailwind-output.css" rel="stylesheet" />
+  <link href="./styles/font.css" rel="stylesheet" />
+  <script type="module" src="./script/imports.js"></script>
+  <script type="module">
+    import { setupImages } from "./script/imports.js";
+    document.addEventListener("DOMContentLoaded", setupImages);
+  </script>
+</head>
+
+<body class="font-poppins max-w-[1700px] mx-auto">
+  <!-- Header -->
+
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="" class="logo h-16" alt="" />
+      </a>
+      <button type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 peer focus:opacity-0"
+        aria-controls="navbar" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
         </button>
-        <button
-          type="button"
-          class="hidden peer-focus:inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+      <button type="button"
+        class="hidden peer-focus:inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
         </button>
-        <div
-          class="h-0 w-full overflow-clip transition-all duration-300 focus:h-56 peer-focus-within:h-56 md:h-auto md:w-auto"
-          id="navbar-default"
-        >
-          <ul
-            class="font-medium flex flex-col poin p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 [&_.active]:text-primary-700 [&_a]:font-medium [&_a]:text-gray-600 [&_a:hover]:text-gray-400 [&_a]:focus:outline-none [&_a]:dark:text-neutral-400 [&_a:hover]:dark:text-neutral-500"
-          >
-            <div
-              class="flex flex-col gap-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5"
-            >
-              <a href="#home" class="active" aria-current="page">Home</a>
-              <a href="#services">Services</a>
-              <a href="#partners">Partners</a>
-              <a href="#">Contact</a>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section
-      id="home"
-      class="bg-primary-800 relative h-[calc(100svh_-5rem)] text-white min-h-fit lg:mx-3 xl:mx-5 overflow-clip"
-    >
-      <div
-        class="flex items-center justify-center flex-col lg:flex-row text-center lg:text-left lg:pl-10"
-      >
-        <img
-          class="plane-2 lg:hidden absolute -left-1/2 top-[calc(100%_-10rem)] sm:top-[calc(100%_-12.5rem)] md:top-[calc(100%_-15rem)]"
-        />
-
-        <div class="grow shrink-0">
-          <div class="py-10 space-y-8 max-w-[45rem] px-2 mx-auto">
-            <h1
-              class="font-unbounded font-bold text-2xl lg:text-3xl xl:text-5xl lg:w-8/12 "
-            >
-              Register to Study <span class="relative w-fit inline-flex"> <span class="block w-full bg-[#d86565] h-1.5 -mb-10  "/>Abroad</span> 
-            </h1>
-
-            <p
-              class="text-sm lg:text-lg xl:text-xl font-normal sm:max-w-9/12 place-self-center lg:place-self-start px-[8% lg:px-0"
-            >
-              Gamshing Travel and Tours is your trusted partner in international
-              travel, education, work placement, property acquisition, and
-              skilled migration. Whether you want to explore new destinations,
-              study abroad, secure a job overseas, or invest in foreign real
-              estates, we make your journey smooth and successful.
-            </p>
-            <div class="lg:flex flex-wrap justify-center contents">
-              <div class="grow py-5">
-                <div
-                  class="grid grid-flow-col gap-2 w-fit mx-auto lg:mx-0 [&_img]:rounded-full [&_img]:size-10 [&_img.flag-lg]:size-8"
-                >
-                  <img class="flag-img" />
-                  <img class="flag-img" />
-                  <img class="flag-img" />
-                  <img class="flag-img" />
-                  <img class="flag-img" />
-                </div>
-                <a href="apply.html" class="">
-                  <button
-                    class="bg-[#d86565] cursor-pointer  text-white md:bg-white mt-8 md:text-black rounded-md p-2 font-unbounded text-2xl px-10 font-bold"
-                  >
-                    Apply Now
-                  </button>
-                </a>
-              </div>
-              <div class="flex-1/2">
-                <img
-                  class="paper-plane w-32 lg:w-40 mx-auto ml-[60%] mt-10 lg:m-0 lg:ml-0"
-                />
-              </div>
-            </div>
+        <div class="h-0 w-full overflow-clip transition-all duration-300 focus:h-56 peer-focus-within:h-56 md:h-auto md:w-auto"
+        id="navbar-default">
+        <ul
+          class="font-medium flex flex-col poin p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 [&_.active]:text-primary-700 [&_a]:font-medium [&_a]:text-gray-600 [&_a:hover]:text-gray-400 [&_a]:focus:outline-none [&_a]:dark:text-neutral-400 [&_a:hover]:dark:text-neutral-500">
+          <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5">
+            <a href="#home" class="active" aria-current="page">Home</a>
+            <a href="#services">Services</a>
+            <a href="#partners">Partners</a>
+            <a href="#">Contact</a>
           </div>
-        </div>
-
-        <div class="overflow-cli row-0 hidden lg:block max-w-full">
-          <img
-            src=""
-            alt="Student studying"
-            class="woman-studying object-cover md:h-[calc(100svh_-5rem)]"
-          />
-        </div>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <!-- Welcome Section -->
-    <section id="services" class="py-12 lg:py-20 bg-white mb-10">
-      <div class="container mx-auto px-4 space-y-5 text-center lg:text-left">
-        <div class="relative">
-          <h1
-            class="font-unbounded font-bold text-2xl lg:text-3xl xl:text-5xl lg:w-8/12"
-          >
-            Welcome to Gamshing Travels and Tours
+  <section id="home"
+    class="bg-primary-800 relative h-[calc(100svh_-5rem)] text-white min-h-fit lg:mx-3 xl:mx-5 overflow-clip">
+    <div class="flex items-center justify-center flex-col lg:flex-row text-center lg:text-left lg:pl-10">
+      <img
+        class="plane-2 lg:hidden absolute -left-1/2 top-[calc(100%_-10rem)] sm:top-[calc(100%_-12.5rem)] md:top-[calc(100%_-15rem)]" />
+
+      <div class="grow shrink-0">
+        <div class="py-10 space-y-8 max-w-[45rem] px-2 mx-auto">
+          <h1 class="font-unbounded font-bold text-2xl lg:text-3xl xl:text-5xl lg:w-8/12 ">
+            Register to Study <span class="relative w-fit inline-flex"> <span
+                class="block w-full bg-[#d86565] h-1.5 -mb-10  ">Abroad</span>
           </h1>
+
           <p
-            class="text-gray-600 mb-12 text-xs md:text-sm lg:text-base font-normal sm:max-w-9/12 lg:place-self-start"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit
-            amet, consectetur adipiscing elit,
+            class="text-sm lg:text-lg xl:text-xl font-normal sm:max-w-9/12 place-self-center lg:place-self-start px-[8% lg:px-0">
+            Gamshing Travel and Tours is your trusted partner in international
+            travel, education, work placement, property acquisition, and
+            skilled migration. Whether you want to explore new destinations,
+            study abroad, secure a job overseas, or invest in foreign real
+            estates, we make your journey smooth and successful.
           </p>
-          <img
-            class="graduate-hat lg:absolute size-20 mx-auto lg:h-10/12 rounded-lg bottom-1 right-5"
-          />
-        </div>
-
-        <!-- Services Grid -->
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 [&>div:not(:last-child)]:rounded-lg [&>div:not(:last-child)]:overflow-clip [&>div:not(:last-child)]:text-white [&>div:not(:last-child)_img]:w-auto [&>div:not(:last-child)_img]:object-cover [&>div:not(:last-child)_img]:rounded-t-lg [&_h3]:font-unbounded [&_h3]:font-bold [&_h3]:text-2xl [&_h3]:underline [&_h3]:underline-offset-2 [&_h3]:decoration-1 [&>div:not(:last-child)_p]:text-sm [&>div:not(:last-child)_p]:lg:text-lg [&>div:not(:last-child)_p]:font-normal [&>div:not(:last-child)_.content]:p-5"
-        >
-          <!-- Purchase a Property Abroad -->
-          <div class="">
-            <div class="">
-              <img alt="" src="" class="travel-window-scene" />
-            </div>
-            <div class="bg-[#C4D66C] p-5 pt-8 h-full">
-              <h3>Work Abroad</h3>
-              <p>
-                Invest in international real estate with our expert guidance.
-                Find your dream property in prime locations worldwide.
-              </p>
-            </div>
-          </div>
-
-          <!-- Buy your Flight Tickets -->
-          <div class="">
-            <div class="">
-              <img alt="travel-passport" src="" class="travel-key" />
-            </div>
-            <div class="bg-[#7248EE] p-5 pt-8 h-full">
-              <h3>Buy your Flight Tickets</h3>
-              <p>
-                Get the best deals on flights to any destination. Affordable
-                prices and convenient booking.
-              </p>
-            </div>
-          </div>
-
-          <!-- Study Abroad with Us -->
-          <div class="">
-            <div class="">
-              <img alt="Student studying" src="" class="travel-beach" />
-            </div>
-            <div class="bg-[#F7B3C7] p-5 pt-8 h-full">
-              <h3>Study Abroad with Us</h3>
-              <p>
-                Access top educational institutions worldwide. We guide you
-                through applications, visas, and accommodation.
-              </p>
-            </div>
-          </div>
-
-          <!-- Work Abroad -->
-          <div class="">
-            <div class="">
-              <img class="travel-passport" />
-            </div>
-            <div class="bg-[#FFDA44] p-5 pt-8 h-full">
-              <h3>Work Abroad</h3>
-              <p>
-                Find international career opportunities. We connect you with
-                employers and help with work permits.
-              </p>
-            </div>
-          </div>
-
-          <!-- Vacations & Abroad Tours (special styling preserved) -->
-          <div
-          id="partners"
-            class=" md:col-span-2 2xl:col-start-2 2xl:row-start-2 bg-red-300 2xl:row-span-ful rounded-lg overflow-hidden"
-          >
-            <div class="2xl:h-full">
-              <img
-                class="w-full object-cover with-us max-h-96 2xl:max-h-[576px]"
-              />
-              <div class="p-5 pt-8 text-white bg-[#FF9176] h-full">
-                <h3 class="font-bold">Study Abroad with us</h3>
-                <p class="text-sm max-w-[900px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing it amet,
-                  consectetur Lorem ipsum dolor sit amet, consectetur adipiscing
-                  it amet, consectetur adipiscing
-                </p>
+          <div class="lg:flex flex-wrap justify-center contents">
+            <div class="grow py-5">
+              <div
+                class="grid grid-flow-col gap-2 w-fit mx-auto lg:mx-0 [&_img]:rounded-full [&_img]:size-10 [&_img.flag-lg]:size-8">
+                <img class="flag-img" />
+                <img class="flag-img" />
+                <img class="flag-img" />
+                <img class="flag-img" />
+                <img class="flag-img" />
               </div>
+              <a href="apply.html" class="">
+                <button
+                  class="bg-[#d86565] cursor-pointer  text-white md:bg-white mt-8 md:text-black rounded-md p-2 font-unbounded text-2xl px-10 font-bold">
+                  Apply Now
+                </button>
+              </a>
             </div>
+            <div class="flex-1/2">
+              <img class="paper-plane w-32 lg:w-40 mx-auto ml-[60%] mt-10 lg:m-0 lg:ml-0" />
+              </div>
+              </div>
+              </div>
+              </div>
+
+      <div class="overflow-cli row-0 hidden lg:block max-w-full">
+        <img src="" alt="Student studying" class="woman-studying object-cover md:h-[calc(100svh_-5rem)]" />
+        </div>
+        </div>
+        </section>
+
+  <!-- Welcome Section -->
+  <section id="services" class="py-12 lg:py-20 bg-white mb-10">
+    <div class="container mx-auto px-4 space-y-5 text-center lg:text-left">
+      <div class="relative">
+        <h1 class="font-unbounded font-bold text-2xl lg:text-3xl xl:text-5xl lg:w-8/12">
+          Welcome to Gamshing Travels and Tours
+        </h1>
+        <p class="text-gray-600 mb-12 text-xs md:text-sm lg:text-base font-normal sm:max-w-9/12 lg:place-self-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit
+          amet, consectetur adipiscing elit,
+        </p>
+        <img class="graduate-hat lg:absolute size-20 mx-auto lg:h-10/12 rounded-lg bottom-1 right-5" />
+        </div>
+
+      <!-- Services Grid -->
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 [&>div:not(:last-child)]:rounded-lg [&>div:not(:last-child)]:overflow-clip [&>div:not(:last-child)]:text-white [&>div:not(:last-child)_img]:w-auto [&>div:not(:last-child)_img]:object-cover [&>div:not(:last-child)_img]:rounded-t-lg [&_h3]:font-unbounded [&_h3]:font-bold [&_h3]:text-2xl [&_h3]:underline [&_h3]:underline-offset-2 [&_h3]:decoration-1 [&>div:not(:last-child)_p]:text-sm [&>div:not(:last-child)_p]:lg:text-lg [&>div:not(:last-child)_p]:font-normal [&>div:not(:last-child)_.content]:p-5">
+        <!-- Purchase a Property Abroad -->
+        <div class="">
+          <div class="">
+            <img alt="" src="" class="travel-window-scene" />
+          </div>
+          <div class="bg-[#C4D66C] p-5 pt-8 h-full">
+            <h3>
+              <a href="apply.html">
+                Work Abroad
+              </a>
+            </h3>
+            <p>
+              Invest in international real estate with our expert guidance.
+              Find your dream property in prime locations worldwide.
+            </p>
+            </div>
+            </div>
+
+        <!-- Buy your Flight Tickets -->
+        <div class="">
+          <div class="">
+            <img alt="travel-passport" src="" class="travel-key" />
+          </div>
+          <div class="bg-[#7248EE] p-5 pt-8 h-full">
+            <h3>Buy your Flight Tickets</h3>
+            <p>
+              Get the best deals on flights to any destination. Affordable
+              prices and convenient booking.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white bg-primary-800">
-      <div class="">
-        <div class="flex flex-col md:flex-row gap-8 md:pr-16">
-          <div class="p-5 pt-0 grow mx-auto md:mx-0">
-            <a href="#" class="flex items-center">
-              <img src="" class="logo max-h-40" alt="" />
-            </a>
+        <!-- Study Abroad with Us -->
+        <div class="">
+          <div class="">
+            <img alt="Student studying" src="" class="travel-beach" />
           </div>
-          <div
-            class="md:contents sm:flex justify-around items-center mx-auto gap-10 text-center md:text-left"
-          >
-            <div class="shrink-0 flex-1">
-              <div class="py-12">
-                <h3 class="text-xl font-bold mb-4 font-unbounded">About</h3>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="hover:underline">About Gamshing</a>
+          <div class="bg-[#F7B3C7] p-5 pt-8 h-full">
+            <h3>Study Abroad with Us</h3>
+            <p>
+              Access top educational institutions worldwide. We guide you
+              through applications, visas, and accommodation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Work Abroad -->
+        <div class="">
+          <div class="">
+            <img class="travel-passport" />
+          </div>
+          <div class="bg-[#FFDA44] p-5 pt-8 h-full">
+            <h3>Work Abroad</h3>
+            <p>
+              Find international career opportunities. We connect you with
+              employers and help with work permits.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vacations & Abroad Tours (special styling preserved) -->
+        <div id="partners"
+          class=" md:col-span-2 2xl:col-start-2 2xl:row-start-2 bg-red-300 2xl:row-span-ful rounded-lg overflow-hidden">
+          <div class="2xl:h-full">
+            <img class="w-full object-cover with-us max-h-96 2xl:max-h-[576px]" />
+            <div class="p-5 pt-8 text-white bg-[#FF9176] h-full">
+              <h3 class="font-bold">Study Abroad with us</h3>
+              <p class="text-sm max-w-[900px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing it amet,
+                consectetur Lorem ipsum dolor sit amet, consectetur adipiscing
+                it amet, consectetur adipiscing
+              </p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white bg-primary-800">
+    <div class="">
+      <div class="flex flex-col md:flex-row gap-8 md:pr-16">
+        <div class="p-5 pt-0 grow mx-auto md:mx-0">
+          <a href="#" class="flex items-center">
+            <img src="" class="logo max-h-40" alt="" />
+          </a>
+        </div>
+        <div class="md:contents sm:flex justify-around items-center mx-auto gap-10 text-center md:text-left">
+          <div class="shrink-0 flex-1">
+            <div class="py-12">
+              <h3 class="text-xl font-bold mb-4 font-unbounded">About</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="hover:underline">About Gamshing</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Purchase Property Abroad</a>
                   </li>
                   <li>
-                    <a href="#" class="hover:underline"
-                      >Purchase Property Abroad</a
-                    >
+                  <a href="#" class="hover:underline">Vacations & Abroad Tours</a>
                   </li>
                   <li>
-                    <a href="#" class="hover:underline"
-                      >Vacations & Abroad Tours</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:underline"
-                      >Buy your Flight Tickets</a
-                    >
+                  <a href="#" class="hover:underline">Buy your Flight Tickets</a>
                   </li>
                   <li>
                     <a href="#" class="hover:underline">Study Abroad with Us</a>
                   </li>
-                </ul>
-              </div>
-            </div>
+                  </ul>
+                  </div>
+                  </div>
 
-            <div class="py-12">
-              <h3 class="text-xl font-bold mb-4 font-unbounded">Contact us</h3>
-              <p class="mb-4">
-                123 Main Street, City<br />Country, Postal Code
-              </p>
-              <p class="mb-4">info@gamshing.com<br />+1 234 567 890</p>
-              <div class="flex space-x-4 justify-center md:justify-start">
-                <a href="#" class="hover:text-gray-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="hover:text-gray-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="hover:text-gray-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                    />
-                  </svg>
-                </a>
-              </div>
+          <div class="py-12">
+            <h3 class="text-xl font-bold mb-4 font-unbounded">Contact us</h3>
+            <p class="mb-4">
+              123 Main Street, City<br />Country, Postal Code
+            </p>
+            <p class="mb-4">info@gamshing.com<br />+1 234 567 890</p>
+            <div class="flex space-x-4 justify-center md:justify-start">
+              <a href="#" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+              </a>
+              <a href="#" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-  <script src="./assets/vendor/preline/dist/preline.js"></script>
+    </div>
+  </footer>
+</body>
+<script src="./assets/vendor/preline/dist/preline.js"></script>
+
 </html>
